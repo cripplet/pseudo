@@ -50,6 +50,9 @@ class Node {
 Given this `Node` definition, we can implement `Node::insert` in the following manner:
 
 ```
+/**
+ * We are assuming that the list `hd:tl` is newly created and do not  have any competing calls to any of its elements
+ */
 public void Node::insert(Node *hd, Node *tl) {
 	/* acquire locks */
 
